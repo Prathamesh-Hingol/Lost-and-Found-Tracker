@@ -3,14 +3,15 @@ import NavBar from "../Components/NavBar";
 import SearchBar from "../Components/SearchBar";
 import Hero from "../Components/Hero";
 import FilterBar from "../Components/FilterBar";
+import ItemCardGrid from "../Components/ItemCardGrid";
 
 const Home = () => {
   return (
-    <div className="bg-slate-50 min-h-screen">
-      <NavBar />
+    <div >
       <Hero />
       <SearchBar />
       <FilterBar />
+      <ItemCardGrid/>
     </div>
   );
 };

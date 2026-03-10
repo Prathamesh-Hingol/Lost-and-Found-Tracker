@@ -15,10 +15,6 @@ const FilterBar = () => {
         <button className="px-5 py-2 rounded-lg border border-gray-200 bg-white text-gray-600 text-2sm font-semibold hover:bg-gray-50">
           Found
         </button>
-
-        <button className="px-5 py-2 rounded-lg border border-gray-200 bg-white text-gray-600 text-2sm font-semibold hover:bg-gray-50">
-          Resolved
-        </button>
       </div>
     </div>
   );
