@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ItemCard from "./ItemCard";
+import { useSearchParams } from "react-router-dom";
 
-const ItemCardGrid = () => {
+const ItemCardGrid = ({item}) => {
   const items = [
     {
       id: 1,
@@ -104,9 +105,10 @@ const ItemCardGrid = () => {
       image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
     },
   ];
+  
   return (
     <div className="my-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      {items
+      {item
         .filter((item) => item.status !== "Resolved")
         .map((item) => (
           <ItemCard key={item.id} item={item} />

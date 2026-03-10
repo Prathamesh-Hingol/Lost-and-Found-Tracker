@@ -7,7 +7,7 @@ import MyQueires from "./Pages/MyQueires";
 
 const App = () => {
   return (
-    <div className="bg-slate-50 min-h-screen">
+    <div className="bg-gray-50 min-h-screen">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
