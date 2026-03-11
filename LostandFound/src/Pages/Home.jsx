@@ -20,9 +20,11 @@ const Home = () => {
   });
   useEffect(() => {
     const updatedItems = localStorage.getItem("item");
-    setItem(JSON.parse(updatedItems));
-    console.log(JSON.parse(updatedItems));
-    
+    const finalList = JSON.parse(updatedItems);
+     
+    setItem(finalList);
+     
+    console.log(finalList);
   }, []);
 
   return (
