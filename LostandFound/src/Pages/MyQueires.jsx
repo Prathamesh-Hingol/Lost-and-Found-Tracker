@@ -1,11 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import SearchBar from "../Components/SearchBar";
+import FilterBar from "../Components/FilterBar";
+import ItemCardGrid from "../Components/ItemCardGrid";
 const MyQueires = () => {
   return (
     <div>
-      <h1 className='text-blue-600'>MyQueries page</h1>
+      <SearchBar />
+      <FilterBar />
+      {/* <ItemCardGrid /> */}
     </div>
-  )
-}
+  );
+};
 
-export default MyQueires
+export default MyQueires;

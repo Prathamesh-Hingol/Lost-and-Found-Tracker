@@ -30,6 +30,14 @@ const FilterBar = ({ filter, setFilter }) => {
         >
           Found
         </button>
+        <button
+          onClick={() => {
+            setFilter("Resolved");
+          }}
+          className={`px-5 py-2 rounded-lg ${filter === "Resolved" ? "bg-blue-600 text-white" : "border border-gray-200 bg-white text-gray-600  hover:bg-gray-50"} text-2sm font-semibold`}
+        >
+          Resolved
+        </button>
       </div>
     </div>
   );
