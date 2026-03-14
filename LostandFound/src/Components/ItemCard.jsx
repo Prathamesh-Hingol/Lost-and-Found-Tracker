@@ -22,7 +22,7 @@ const ItemCard = ({ item }) => {
         {item.status}
       </div>
 
-      <div className="p-4">
+      <div className="p-4 flex flex-col flex-1 justify-between">
         <div className="text-xl font-bold">{item.name}</div>
 
         <div className="text-2sm text-gray-500">{item.location}</div>
